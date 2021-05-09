@@ -59,7 +59,6 @@ public class OnePlayerGame extends AppCompatActivity {
             sign[1] = "x";
         }
 
-
         i0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
