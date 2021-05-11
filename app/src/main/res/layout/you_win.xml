@@ -15,7 +15,35 @@
         android:text="You win"
         android:textColor="#fff"
         android:textSize="40dp"
+        android:id="@+id/msgYouWinTV"
         />
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgYouWinTV"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/msg"
+                android:gravity="center"
+                android:text="OK"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:id="@+id/okBtn"
+                />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

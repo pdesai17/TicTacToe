@@ -1,6 +1,7 @@
 package com.example.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -19,8 +20,9 @@ public class TwoPlayersGame extends AppCompatActivity {
     String arr[]=new String[9];
     String value;
     ImageView i0,i1,i2,i3,i4,i5,i6,i7,i8;
+    ImageView[] imgs = {i0,i1,i2,i3,i4,i5,i6,i7,i8};
     Dialog myDialogue;
-
+    CardView okBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -235,15 +237,43 @@ public class TwoPlayersGame extends AppCompatActivity {
     }
     private void reset()
     {
+        for (int i=0;i<arr.length;i++)
+        {
+            arr[i]= String.valueOf(i);
+        }
+        player=0;
+        /*for (int i = 0; i <imgs.length ; i++)
+        {
+            Log.d(TAG, "reset: "+imgs[i]);
+            //imgs[i].setTag("a");
+            imgs[i].setImageResource(R.drawable.bg);
+        }*/
         i0.setImageResource(R.drawable.bg);
+        i0.setTag("a");
+
         i1.setImageResource(R.drawable.bg);
+        i1.setTag("a");
+
         i2.setImageResource(R.drawable.bg);
+        i2.setTag("a");
+
         i3.setImageResource(R.drawable.bg);
+        i3.setTag("a");
+
         i4.setImageResource(R.drawable.bg);
+        i4.setTag("a");
+
         i5.setImageResource(R.drawable.bg);
+        i5.setTag("a");
+
         i6.setImageResource(R.drawable.bg);
+        i6.setTag("a");
+
         i7.setImageResource(R.drawable.bg);
+        i7.setTag("a");
+
         i8.setImageResource(R.drawable.bg);
+        i8.setTag("a");
     }
     private void checkWinner(String value) {
 
@@ -254,11 +284,28 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKBtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
+
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[0]+" "+arr[4]+" "+arr[8]);
             Log.d(TAG, "checkWinner: ");
@@ -269,10 +316,26 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKBtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[2]+" "+arr[4]+" "+arr[6]);
@@ -284,11 +347,28 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKBtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
+
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[0]+" "+arr[1]+" "+arr[2]);
             Log.d(TAG, "checkWinner: ");
@@ -299,11 +379,28 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKBtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
+
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[3]+" "+arr[4]+" "+arr[5]);
             Log.d(TAG, "checkWinner: ");
@@ -314,11 +411,28 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKbtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
+
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[6]+" "+arr[7]+" "+arr[8]);
             Log.d(TAG, "checkWinner: ");
@@ -329,11 +443,28 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKBtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
+
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[0]+" "+arr[3]+" "+arr[6]);
             Log.d(TAG, "checkWinner: ");
@@ -344,11 +475,28 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKbtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
+
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[1]+" "+arr[4]+" "+arr[7]);
             Log.d(TAG, "checkWinner: ");
@@ -359,14 +507,36 @@ public class TwoPlayersGame extends AppCompatActivity {
             {
                 player=1;
                 myDialogue.setContentView(R.layout.player_one_win);
+                okBtn=myDialogue.findViewById(R.id.OKbtn);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             else{
                 player=2;
                 myDialogue.setContentView(R.layout.player_two_wins);
+                okBtn=myDialogue.findViewById(R.id.OKBtn2);
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        myDialogue.dismiss();
+                        reset();
+                    }
+                });
             }
             myDialogue.show();
             Log.d(TAG, "checkWinner: "+arr[2]+" "+arr[5]+" "+arr[8]);
             Log.d(TAG, "checkWinner: ");
+        }
+        else if (!(arr[0].equals("0") || arr[1].equals("1") || arr[2].equals("2") || arr[3].equals("3") || arr[4].equals("4")|| arr[5].equals("5")|| arr[6].equals("6")|| arr[7].equals("7")|| arr[8].equals("8")))
+        {
+            Toast.makeText(this, "No one wins", Toast.LENGTH_SHORT).show();
+            myDialogue.setContentView(R.layout.no_win);
+            myDialogue.show();
         }
     }
     protected void onDestroy()

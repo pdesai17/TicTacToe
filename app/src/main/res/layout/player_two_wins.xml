@@ -6,7 +6,6 @@
     android:layout_gravity="center"
     android:background="@color/cardview_dark_background">
     <TextView
-        android:id="@+id/player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,7 +15,33 @@
         android:text="player 2 wins"
         android:textColor="#fff"
         android:textSize="40dp"
+        android:id="@+id/msgPlayer2WinTV"
         />
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgPlayer2WinTV"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/OKBtn2"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="OK"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:id="@+id/okBtn"
+                />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
