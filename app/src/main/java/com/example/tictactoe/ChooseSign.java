@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class ChooseSign extends AppCompatActivity {
-
     private static final String TAG ="choose sign" ;
 
     @Override
@@ -38,7 +37,6 @@ public class ChooseSign extends AppCompatActivity {
                     Intent toTwoPlayerGame = new Intent(ChooseSign.this, TwoPlayersGame.class);
                     toTwoPlayerGame.putExtra("tag", tagO);
                     startActivity(toTwoPlayerGame);
-                    finish();
                 }
                 else
                 {
@@ -46,7 +44,6 @@ public class ChooseSign extends AppCompatActivity {
                     Intent toOnePlayerGame = new Intent(ChooseSign.this, OnePlayerGame.class);
                     toOnePlayerGame.putExtra("tag", tagO);
                     startActivity(toOnePlayerGame);
-                    finish();
                 }
             }
         });

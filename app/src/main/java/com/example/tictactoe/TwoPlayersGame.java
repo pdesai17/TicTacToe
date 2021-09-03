@@ -248,31 +248,31 @@ public class TwoPlayersGame extends AppCompatActivity {
             //imgs[i].setTag("a");
             imgs[i].setImageResource(R.drawable.bg);
         }*/
-        i0.setImageResource(R.drawable.bg);
+        i0.setImageResource(R.drawable.null_image);
         i0.setTag("a");
 
-        i1.setImageResource(R.drawable.bg);
+        i1.setImageResource(R.drawable.null_image);
         i1.setTag("a");
 
-        i2.setImageResource(R.drawable.bg);
+        i2.setImageResource(R.drawable.null_image);
         i2.setTag("a");
 
-        i3.setImageResource(R.drawable.bg);
+        i3.setImageResource(R.drawable.null_image);
         i3.setTag("a");
 
-        i4.setImageResource(R.drawable.bg);
+        i4.setImageResource(R.drawable.null_image);
         i4.setTag("a");
 
-        i5.setImageResource(R.drawable.bg);
+        i5.setImageResource(R.drawable.null_image);
         i5.setTag("a");
 
-        i6.setImageResource(R.drawable.bg);
+        i6.setImageResource(R.drawable.null_image);
         i6.setTag("a");
 
-        i7.setImageResource(R.drawable.bg);
+        i7.setImageResource(R.drawable.null_image);
         i7.setTag("a");
 
-        i8.setImageResource(R.drawable.bg);
+        i8.setImageResource(R.drawable.null_image);
         i8.setTag("a");
     }
     private void checkWinner(String value) {
@@ -542,7 +542,7 @@ public class TwoPlayersGame extends AppCompatActivity {
     protected void onDestroy()
     {
         super.onDestroy();
-        player = 0;
+        player = 0;/*
         i0.setImageResource(R.drawable.bg);
         i1.setImageResource(R.drawable.bg);
         i2.setImageResource(R.drawable.bg);
@@ -551,6 +551,6 @@ public class TwoPlayersGame extends AppCompatActivity {
         i5.setImageResource(R.drawable.bg);
         i6.setImageResource(R.drawable.bg);
         i7.setImageResource(R.drawable.bg);
-        i8.setImageResource(R.drawable.bg);
+        i8.setImageResource(R.drawable.bg);*/
     }
 }

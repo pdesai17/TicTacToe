@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="400dp"
+    android:layout_height="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg">
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="400dp"
-    android:layout_height="300dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="center"
-    android:background="@color/cardview_dark_background">
+    android:layout_height="300dp">
  <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
@@ -13,8 +15,9 @@
      app:layout_constraintTop_toTopOf="parent"
      app:layout_constraintBottom_toBottomOf="parent"
      android:text="player 1 wins"
-     android:textColor="#fff"
-     android:textSize="40dp"
+     android:textColor="@color/textColor"
+     android:fontFamily="@font/ageta"
+     android:textSize="30dp"
      android:id="@+id/msgPlayer1WinTV"
      />
  <androidx.cardview.widget.CardView
@@ -29,14 +32,16 @@
      >
   <FrameLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
+      android:layout_height="match_parent"
+      android:background="@color/textColor">
    <TextView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:gravity="center"
        android:text="OK"
-       android:textColor="@color/black"
-       android:textSize="25dp"
+       android:textColor="@color/bg"
+       android:fontFamily="@font/ageta"
+       android:textSize="25sp"
        android:id="@+id/okBtn"
        />
   </FrameLayout>
@@ -45,3 +50,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,13 +1,13 @@
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#000080"
+    android:background="@color/white"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:id="@+id/background"
-        android:background="#5DADE2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +31,7 @@
                     android:id="@+id/i0"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
 
@@ -40,7 +40,7 @@
                     android:id="@+id/i1"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -48,7 +48,7 @@
                     android:id="@+id/i2"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                   android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -65,7 +65,7 @@
                     android:id="@+id/i3"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -73,7 +73,7 @@
                     android:id="@+id/i4"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -81,7 +81,7 @@
                     android:id="@+id/i5"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -96,7 +96,7 @@
                     android:id="@+id/i6"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -104,7 +104,7 @@
                     android:id="@+id/i7"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />
@@ -112,7 +112,7 @@
                     android:id="@+id/i8"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/bg"
+                    android:background="@color/card_bg"
                     android:tag="2"
                     android:layout_marginLeft="13dp"
                     />

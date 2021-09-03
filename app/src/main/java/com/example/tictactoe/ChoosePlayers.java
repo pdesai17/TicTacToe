@@ -23,7 +23,6 @@ public class ChoosePlayers extends AppCompatActivity {
                 Intent toChooseSign=new Intent(ChoosePlayers.this,ChooseSign.class);
                 toChooseSign.putExtra("player","one");
                 startActivity(toChooseSign);
-                finish();
             }
         });
         twoPlayers.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +31,6 @@ public class ChoosePlayers extends AppCompatActivity {
                 Intent toChooseSign=new Intent(ChoosePlayers.this,ChooseSign.class);
                 toChooseSign.putExtra("player","two");
                 startActivity(toChooseSign);
-                finish();
             }
         });
     }

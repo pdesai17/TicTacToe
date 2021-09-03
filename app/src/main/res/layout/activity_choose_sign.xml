@@ -1,5 +1,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -11,9 +12,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="250dp"
-        android:text="Choose your sign(player 1)"
+        android:text="Choose your sign (player 1)"
+        android:fontFamily="@font/ageta"
         android:textSize="25dp"
-        android:textColor="#000"
+        android:textColor="#6A00FF"
         />
     <androidx.cardview.widget.CardView
         android:layout_width="120dp"
@@ -27,7 +29,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#CCCCFF"
+            android:background="#8338EC"
             >
             <ImageView
                 android:id="@+id/imgX"
@@ -52,7 +54,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#CCCCFF"
+            android:background="@color/card_bg"
             >
             <ImageView
                 android:id="@+id/imgO"
